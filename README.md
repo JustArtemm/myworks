@@ -12,3 +12,8 @@ Winner model of 2022 MIPT space festival modeled in SolidWorks.
 My Control theory tasks on themes: Maximum pontryagin principles, Dynamic programming task, MountainCar using Deep Q-Learning.
 * Scripts\
 Some scripts that I wrote to help myself in study: mnk - method of minimum squares to draw graphics in my labs.
+## Currently working
+* Bachelor diploma\
+An algorithm for processing data from binocular video sensors to maintain the position and orientation of an unmanned aircraft in space in the event of a failure of the global navigation satellite system.
+* Rocket Model 2023\
+Rocket model for future space festival, same model with some differences: more aerodynamical stability, altitude and GPS sensors on Raspberry PI platform, fully parametrical computed parameters in Solidworks Flow simulation to reach the minimal friction and optimal center of pressure and center of mass position computation with python.
