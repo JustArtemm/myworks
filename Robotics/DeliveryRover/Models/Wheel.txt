@@ -1,0 +1,34 @@
+Mass properties of wheel_base
+     Configuration: Default
+     Coordinate system: -- default --
+
+Density = 1020.00 kilograms per cubic meter
+
+Mass = 2.14 kilograms
+
+Volume = 0.00 cubic meters
+
+Surface area = 0.12 square meters
+
+Center of mass: ( meters )
+	X = 0.00
+	Y = 0.03
+	Z = 0.00
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.95,  0.00, -0.32)   	Px = 0.01
+	 Iy = (-0.32,  0.00, -0.95)   	Py = 0.01
+	 Iz = ( 0.00,  1.00,  0.00)   	Pz = 0.01
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)
+	Lxx = 0.01	Lxy = 0.00	Lxz = 0.00
+	Lyx = 0.00	Lyy = 0.01	Lyz = 0.00
+	Lzx = 0.00	Lzy = 0.00	Lzz = 0.01
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system. (Using positive tensor notation.)
+	Ixx = 0.01	Ixy = 0.00	Ixz = 0.00
+	Iyx = 0.00	Iyy = 0.01	Iyz = 0.00
+	Izx = 0.00	Izy = 0.00	Izz = 0.01

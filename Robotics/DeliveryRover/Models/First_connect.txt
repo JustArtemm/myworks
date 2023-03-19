@@ -1,0 +1,34 @@
+Mass properties of first_connect
+     Configuration: По умолчанию
+     Coordinate system: -- default --
+
+Density = 7700.00 kilograms per cubic meter
+
+Mass = 4.33 kilograms
+
+Volume = 0.00 cubic meters
+
+Surface area = 0.05 square meters
+
+Center of mass: ( meters )
+	X = 0.02
+	Y = -0.06
+	Z = 0.06
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 0.00, -0.60,  0.80)   	Px = 0.00
+	 Iy = ( 0.00, -0.80, -0.60)   	Py = 0.02
+	 Iz = ( 1.00,  0.00,  0.00)   	Pz = 0.02
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)
+	Lxx = 0.02	Lxy = 0.00	Lxz = 0.00
+	Lyx = 0.00	Lyy = 0.01	Lyz = -0.01
+	Lzx = 0.00	Lzy = -0.01	Lzz = 0.01
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system. (Using positive tensor notation.)
+	Ixx = 0.05	Ixy = -0.01	Ixz = 0.00
+	Iyx = -0.01	Iyy = 0.03	Iyz = -0.02
+	Izx = 0.00	Izy = -0.02	Izz = 0.03

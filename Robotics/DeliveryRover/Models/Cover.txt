@@ -1,0 +1,34 @@
+Mass properties of Cover
+     Configuration: Default
+     Coordinate system: -- default --
+
+Density = 1020.00 kilograms per cubic meter
+
+Mass = 21.15 kilograms
+
+Volume = 0.02 cubic meters
+
+Surface area = 0.83 square meters
+
+Center of mass: ( meters )
+	X = 0.29
+	Y = 0.03
+	Z = -0.30
+
+Principal axes of inertia and principal moments of inertia: ( kilograms * square meters )
+Taken at the center of mass.
+	 Ix = ( 1.00, -0.01,  0.00)   	Px = 0.61
+	 Iy = ( 0.00,  0.00, -1.00)   	Py = 0.63
+	 Iz = ( 0.01,  1.00,  0.00)   	Pz = 1.22
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)
+	Lxx = 0.61	Lxy = 0.00	Lxz = 0.00
+	Lyx = 0.00	Lyy = 1.22	Lyz = 0.00
+	Lzx = 0.00	Lzy = 0.00	Lzz = 0.63
+
+Moments of inertia: ( kilograms * square meters )
+Taken at the output coordinate system. (Using positive tensor notation.)
+	Ixx = 2.53	Ixy = 0.18	Ixz = -1.86
+	Iyx = 0.18	Iyy = 4.95	Iyz = -0.19
+	Izx = -1.86	Izy = -0.19	Izz = 2.47
