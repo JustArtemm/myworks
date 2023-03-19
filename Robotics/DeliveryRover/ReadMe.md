@@ -7,3 +7,5 @@ This project includes 3D modeling a robot, simulating its movement with GAZEBO I
 Especially my project is a Delivery rover that main goal is to ride from point A to point B avoiding collisions
 with anything that probably can appear on its trajectory for example: unexpected walls or people walking in the streets,
 one of the tasks that rover have to deal with is to overcome road border when it needs
+
+![Image alt](https://github.com/JustArtemm/myworks/Robotics/DeliveryRover/Rover.png)
