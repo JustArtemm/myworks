@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.7"> 
+
+	<model name='ground'>
+	
+		<static>True</static>		
+    <link name="ground_plane">
+		  <collision name="ground_plane_collision">
+				<geometry>
+				  <plane>
+				  	<normal>0 0 1</normal>
+				  </plane>
+				</geometry>
+			</collision>
+			<visual name="visual">
+				<geometry>
+			    <plane>
+					  <normal>0 0 1</normal>
+			    </plane>
+				</geometry>
+				<material>
+					<ambient>1 1 1 1</ambient>
+					<diffuse>1 1 1 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+				</material>
+			</visual>
+    </link>
+		
+		
+	</model>
+	
+</sdf>

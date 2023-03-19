@@ -1,0 +1,22 @@
+Commands for viocity:
+
+In Gazebo:
+ign topic -t "/cmd_vel" -m ignition.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0}"
+
+In ROS2:
+ros2 topic pub /cmd_vel geometry_msgs/Twist "linear: {x: 10 }"
+ros2 run ros_gz_bridge parameter_bridge /cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist
+
+
+For cover:
+
+In Gazebo:
+
+Open
+ign topic -t "/cover" -m ignition.msgs.Double -p "data: 65.0"
+Close
+ign topic -t "/cover" -m ignition.msgs.Double -p "data: 30.0"
+
+In ROS2:
+ros2 run ros_gz_bridge parameter_bridge /cover@std_msgs/msg/Float64]ignition.msgs.Double
+ros2 topic pub /cover std_msgs/Float64 "data: 65.0"

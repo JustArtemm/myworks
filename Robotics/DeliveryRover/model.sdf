@@ -1,0 +1,852 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">   
+         
+     
+		<model name='rover'>
+	    <pose>0 0 0 0 0 0</pose>
+	    
+	    
+			<link name='rover_base_link'>
+			  <pose>0 0 0 0 0 0</pose>
+			  <inertial>
+			    <pose>0 0 0 0 0 0</pose>
+				<mass>145.49</mass>
+				<inertia>
+				  <ixx>7.21</ixx>
+				  <ixy>0</ixy>
+				  <ixz>1.96</ixz>
+				  <iyy>14.51</iyy>
+				  <iyz>0</iyz>
+				  <izz>14.77</izz>
+			    </inertia>
+			  </inertial>
+			 	<collision name='rover_base_link_collision'>
+			    <pose >0 0 0 0 0 0</pose>
+				 	<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/toi/base_toi.dae</uri>
+						</mesh>
+					</geometry>
+			  </collision>
+			  <visual name='rover_base_link_visual'>
+					<pose >0 0 0 0 0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/base.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0 0 1 1</ambient>
+						<diffuse>0 0 1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+			  </visual>
+			</link>
+	    
+	    
+	    <link name='rover_back_connect_right'>
+	      <pose >-0.23 -0.28 -0.162 0 0 0</pose>
+	      <inertial>
+					<pose >0 0 -0.07 0 0 0</pose>
+					<mass>7.43</mass>
+					<inertia>
+						<ixx>0.1</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.06</iyy>
+						<iyz>0</iyz>
+						<izz>0.05</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='rover_back_connect_right_collision'>
+					<pose >0 0 0 0 0 0</pose>
+					<geometry>
+						<box>
+							<size>0.337 0.04 0.17</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='rover_back_connect_right_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/back_connect.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+					</material>
+				</visual>
+				<gravity>1</gravity>	
+	    </link>
+	    <joint name='rover_back_connect_right_joint' type='revolute'>
+	      <child>rover_back_connect_right</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>-0.349</lower>
+						<upper>0.349</upper>
+					</limit>
+				</axis>
+	    </joint>
+	    	    
+	    <link name='rover_back_connect_left'>
+	      <pose >-0.23 0.28 -0.162 0 -0 0</pose>
+	      <inertial>
+					<pose >0 0 -0.07 0 -0 0</pose>
+					<mass>7.43</mass>
+					<inertia>
+						<ixx>0.1</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.06</iyy>
+						<iyz>0</iyz>
+						<izz>0.05</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='rover_back_connect_left_collision'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<box>
+							<size>0.337 0.04 0.17</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='rover_back_connect_left_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/back_connect.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+					</material>
+				</visual>
+				<gravity>1</gravity>
+	    </link>
+	    <joint name='rover_back_connect_left_joint' type='revolute'>
+	      <child>rover_back_connect_left</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>-0.349</lower>
+						<upper>0.349</upper>
+					</limit>
+				</axis>
+	    </joint>
+   
+	    <link name='rover_first_connect_left'>
+	      <pose >0.07 0.28 -0.162 0.293 -0.517 0</pose>
+	      <inertial>
+					<pose >0.038 0 -0.076 0 -0 0</pose>
+					<mass>4.33</mass>
+					<inertia>
+						<ixx>0.02</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.01</iyy>
+						<iyz>0</iyz>
+						<izz>0.01</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='rover_first_connect_left_collision'>
+					<pose >0 0 0 0 0 0</pose>
+					<geometry>
+						<box>
+							<size>0.203 0.04 0.17</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='rover_first_connect_left_visual'>
+					<pose >0 0 0 0 0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/first_connect.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+					</material>
+				</visual>
+				<gravity>1</gravity>
+	    </link>    
+	    <joint name='rover_first_connect_left_joint' type='revolute'>
+	      <child>rover_first_connect_left</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>0</lower>
+						<upper>0.3</upper>
+					</limit>
+				</axis>
+	    </joint> 
+	    
+	    <link name='rover_first_connect_right'>
+	      <pose >0.07 -0.28 -0.162 0.293 -0.517 0</pose>
+	      <inertial>
+					<pose >0.038 0 -0.076 0 -0 0</pose>
+					<mass>4.33</mass>
+					<inertia>
+						<ixx>0.02</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.01</iyy>
+						<iyz>0</iyz>
+						<izz>0.01</izz>
+					</inertia>
+				</inertial>
+				<collision name='rover_first_connect_right_collision'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<box>
+							<size>0.203 0.04 0.17</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='rover_first_connect_right_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/first_connect.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_first_connect_right_joint' type='revolute'>
+	      <child>rover_first_connect_right</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>0</lower>
+						<upper>0.3</upper>
+					</limit>
+					<use_parent_model_frame>1</use_parent_model_frame>
+				</axis>
+	    </joint>
+	    
+	    
+	  
+	    
+	    <link name='rover_wheel_first_right'>
+	      <pose >0.204 -0.333 -0.261 0 0 0</pose>
+	      <inertial>
+					<pose >0 0 0 0 0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+				</inertial>
+	      <collision name='rover_wheel_first_right_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+								<mu2>1</mu2>
+								<slip1>0.00092</slip1>
+								<slip2>0</slip2>
+								<fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+			    </collision>
+			    <visual name='rover_wheel_first_right_visual'>
+						<pose >0 0 0 0 -0 0</pose>
+						<geometry>
+							<mesh>
+								<scale>1 1 1</scale>
+								<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+							</mesh>
+						</geometry>
+						<material>
+							<ambient>0.1 0.1 0.1 1</ambient>
+							<diffuse>0.1 0.1 0.1 1</diffuse>
+							<specular>0.1 0.1 0.1 1</specular>
+						</material>
+			    </visual>
+			    <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_first_right_joint' type='revolute'>
+	      <child>rover_wheel_first_right</child>
+	      <parent>rover_first_connect_right</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+				</axis>
+	    </joint>
+
+
+	    <link name='rover_wheel_first_left'>
+	      <pose >0.204 0.333 -0.261 0 -0 3.14</pose>
+	      <inertial>
+					<pose >0 0 0 0 -0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+				</inertial>
+				<collision name='rover_wheel_first_left_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+							  <mu2>1</mu2>
+							  <slip1>0.00092</slip1>
+							  <slip2>0</slip2>
+							  <fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+	      </collision>
+	      <visual name='rover_wheel_first_left_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0.1 0.1 0.1 1</ambient>
+						<diffuse>0.1 0.1 0.1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_first_left_joint' type='revolute'>
+	      <child>rover_wheel_first_left</child>
+	      <parent>rover_first_connect_left</parent>
+	      <axis>
+					<xyz>0 -1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+				</axis>
+	    </joint>
+
+
+	    <link name='rover_wheel_back_right1'>
+	      <pose >-0.097 -0.333 -0.261 0 -0 0</pose>
+	      <inertial>
+					<pose >0 0 0 0 -0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+				</inertial>
+	      <collision name='rover_wheel_back_right1_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+							  <mu2>1</mu2>
+							  <slip1>0.00092</slip1>
+							  <slip2>0</slip2>
+							  <fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+	      </collision>
+	      <visual name='rover_wheel_back_right1_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0.1 0.1 0.1 1</ambient>
+						<diffuse>0.1 0.1 0.1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_back_right1_joint' type='revolute'>
+	      <child>rover_wheel_back_right1</child>
+	      <parent>rover_back_connect_right</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+					<dynamics>
+						<spring_reference>0</spring_reference>
+						<spring_stiffness>0</spring_stiffness>
+					</dynamics>
+					<use_parent_model_frame>1</use_parent_model_frame>
+				</axis>
+	    </joint>
+
+
+	    <link name='rover_wheel_back_right2'>
+	      <pose >-0.364 -0.333 -0.261 0 -0 0</pose>
+	      <inertial>
+					<pose >0 0 0 0 -0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+				</inertial>
+	      <collision name='rover_wheel_back_right2_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+							  <mu2>1</mu2>
+							  <slip1>0.00092</slip1>
+							  <slip2>0</slip2>
+							  <fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+	      </collision>
+	      <visual name='rover_wheel_back_right2_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0.1 0.1 0.1 1</ambient>
+						<diffuse>0.1 0.1 0.1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_back_right2_joint' type='revolute'>
+	      <child>rover_wheel_back_right2</child>
+	      <parent>rover_back_connect_right</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+					<dynamics>
+						<spring_reference>0</spring_reference>
+						<spring_stiffness>0</spring_stiffness>
+					</dynamics>
+	      </axis>
+	    </joint>
+
+
+	    <link name='rover_wheel_back_left1'>
+	      <pose >-0.097 0.333 -0.261 0 -0 3.14</pose>
+	      <inertial>
+					<pose >0 0 0 0 -0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+				</inertial>
+	      <collision name='rover_wheel_back_left1_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+							  <mu2>1</mu2>
+							  <slip1>0.00092</slip1>
+							  <slip2>0</slip2>
+							  <fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+	      </collision>
+	      <visual name='rover_wheel_back_left1_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0.1 0.1 0.1 1</ambient>
+						<diffuse>0.1 0.1 0.1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_back_left1_joint' type='revolute'>
+	      <child>rover_wheel_back_left1</child>
+	      <parent>rover_back_connect_left</parent>
+	      <axis>
+					<xyz>0 -1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+				</axis>
+	    </joint>
+
+
+	    <link name='rover_wheel_back_left2'>
+	      <pose >-0.364 0.333 -0.261 0 -0 3.14</pose>
+	      <inertial>
+					<pose >0 0 0 0 -0 0</pose>
+					<mass>2.14</mass>
+					<inertia>
+						<ixx>0.001</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.001</iyy>
+						<iyz>0</iyz>
+						<izz>0.001</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='rover_wheel_back_left2_collision'>
+					<pose >0 0 0 1.57 -0 0</pose>
+					<geometry>
+						<cylinder>
+							<radius>0.12</radius>
+							<length>0.05</length>
+						</cylinder>
+					</geometry>
+					<surface>
+						<contact>
+							<ode>
+								<kp>1e+07</kp>
+							  <kd>1</kd>
+							</ode>
+						</contact>
+						<friction>
+							<ode>
+								<mu>0.5</mu>
+							  <mu2>1</mu2>
+							  <slip1>0.00092</slip1>
+							  <slip2>0</slip2>
+							  <fdir1>0 0 1</fdir1>
+							</ode>
+						</friction>
+					</surface>
+	      </collision>
+	      <visual name='rover_wheel_back_left2_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/wheel.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>0.1 0.1 0.1 1</ambient>
+						<diffuse>0.1 0.1 0.1 1</diffuse>
+						<specular>0.1 0.1 0.1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_wheel_back_left2_joint' type='revolute'>
+	      <child>rover_wheel_back_left2</child>
+	      <parent>rover_back_connect_left</parent>
+	      <axis>
+					<xyz>0 -1 0</xyz>
+					<limit>
+						<lower>-1e+16</lower>
+						<upper>1e+16</upper>
+					</limit>
+	      </axis>
+	    </joint>
+
+
+
+
+	    <link name='rover_cover'>
+	      <pose >0.07 0 0.308 0 0 0</pose>
+	      <inertial>
+					<pose >-0.293 0 -0.03 0 0 0</pose>
+					<mass>21.15</mass>
+					<inertia>
+						<ixx>0.61</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>1.22</iyy>
+						<iyz>0</iyz>
+						<izz>0.63</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='rover_cover_collision'>
+					<pose >-0.31 0 0 0 0 0</pose>
+					<geometry>
+						<box>
+							<size>0.62 0.6 0.08</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='rover_cover_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/cover.dae</uri>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+					</material>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='rover_cover_joint' type='revolute'>
+	      <child>rover_cover</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+					<limit>
+						<lower>0</lower>
+						<upper>1.05</upper>
+					</limit>
+					<dynamics>
+            <damping>0.5</damping>
+          </dynamics>
+	      </axis>
+	    </joint>
+	    
+	    <link name='box'>
+	      <pose >0 0 0 0 0 0</pose>
+	      <inertial>
+					<pose >0 0 0 0 0 0</pose>
+					<mass>0.1</mass>
+					<inertia>
+						<ixx>0.02</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.01</iyy>
+						<iyz>0</iyz>
+						<izz>0.01</izz>
+					</inertia>
+	      </inertial>
+	      <collision name='box_collision'>
+					<pose >0 0 0 0 0 0</pose>
+					<geometry>
+						<box>
+							<size>0.22 0.47 0.24</size>
+						</box>
+					</geometry>
+	      </collision>
+	      <visual name='box_visual'>
+					<pose >0 0 0 0 -0 0</pose>
+					<geometry>
+						<mesh>
+							<scale>1 1 1</scale>
+							<uri>/home/student/Documents/rover/dae/box.dae</uri>
+						</mesh>
+					</geometry>
+	      </visual>
+	      <gravity>1</gravity>
+	    </link>
+	    <joint name='box_joint' type='fixed'>
+	      <child>box</child>
+	      <parent>rover_base_link</parent>
+	      <axis>
+					<xyz>0 1 0</xyz>
+	      </axis>
+	    </joint>
+	    
+     
+     	<!--
+	     <plugin
+                filename="libignition-gazebo-diff-drive-system.so"
+                name="ignition::gazebo::systems::DiffDrive">
+                <left_joint>rover_wheel_back_left2_joint</left_joint>
+                <right_joint>rover_wheel_back_right2_joint</right_joint>
+                <wheel_separation>0.666</wheel_separation>
+                <wheel_radius>0.12</wheel_radius>
+                <odom_publish_frequency>1</odom_publish_frequency>
+                <topic>cmd_vel</topic>
+      </plugin>
+            
+ 	     <plugin
+          filename="libignition-gazebo-joint-controller-system.so"
+          name="ignition::gazebo::systems::JointController">
+          <joint_name>rover_wheel_back_left2_joint</joint_name>
+          <right_joint>rover_wheel_back_right2_joint</right_joint>
+          <wheel_separation>0.666</wheel_separation>
+          <wheel_radius>0.12</wheel_radius>
+          <odom_publish_frequency>1</odom_publish_frequency>
+          <topic>cmd_vel</topic>
+      </plugin>
+      -->
+      
+      
+     <plugin name="ignition::gazebo::systems::DiffDrive" filename="libignition-gazebo-diff-drive-system.so">
+      			  <!-- wheels -->
+			  <num_wheel_pairs>3</num_wheel_pairs>
+			  <left_joint>rover_wheel_first_left_joint</left_joint>
+			  <left_joint>rover_wheel_back_left1_joint</left_joint>
+			  <left_joint>rover_wheel_back_left2_joint</left_joint>
+			  <right_joint>rover_wheel_first_right_joint</right_joint>
+			  <right_joint>rover_wheel_back_right1_joint</right_joint>
+			  <right_joint>rover_wheel_back_right2_joint</right_joint>
+
+			  <!-- kinematics -->
+			  <wheel_separation>0.666</wheel_separation>
+			  <wheel_diameter>0.12</wheel_diameter>
+			  <max_wheel_torque>20.0</max_wheel_torque>
+			  <max_wheel_acceleration>10.0</max_wheel_acceleration>
+
+			  <!-- odometry  --> 
+			  <odometry_source>world</odometry_source>
+			  <odometry_frame>odom</odometry_frame>
+			  <robot_base_frame>rover_base_link</robot_base_frame>
+
+			  <!-- topic & re remappings -->
+			  <topic>cmd_vel</topic>
+			  <publish_odom>true</publish_odom>
+			  <publish_odom_tf>true</publish_odom_tf>
+			  <update_rate>100.0</update_rate>
+			</plugin>
+			
+			<!--<plugin
+        filename="ignition-gazebo-joint-controller-system"
+        name="ignition::gazebo::systems::JointController">
+        <joint_name>rover_cover_joint</joint_name>
+        <use_force_commands>false</use_force_commands>
+        <initial_velocity>0</initial_velocity>
+        <topic>cover</topic>
+      </plugin>-->
+      
+      <plugin
+        filename="ignition-gazebo-joint-position-controller-system"
+        name="ignition::gazebo::systems::JointPositionController">
+        <joint_name>rover_cover_joint</joint_name>
+        <topic>cover</topic>
+        <p_gain>1</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+        <i_max>1</i_max>
+        <i_min>-1</i_min>
+        <cmd_max>1000</cmd_max>
+        <cmd_min>-1000</cmd_min>
+      </plugin>
+
+	    
+    </model>
+            
+</sdf>

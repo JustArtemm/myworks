@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<sdf version="1.7"> 
+
+	<model name='test'>
+	
+		<static>True</static>
+		
+		<link name='test_link'>
+		<visual name='test_vis'>
+		  <pose >0 0 0 0 -0 0</pose>
+			<geometry>
+				<mesh>
+					<scale>1 1 1</scale>
+					<uri>/home/student/Documents/rover/dae/map_last.dae</uri>
+				</mesh>
+			</geometry>
+			<material>
+				<ambient>1 1 1 1</ambient>
+				<diffuse>1 1 1 1</diffuse>
+				<specular>0.1 0.1 0.1 1</specular>
+			</material>
+		  </visual>
+		  <collision name='test_col'>
+				<pose >0 0 0 0 -0 0</pose>
+				<geometry>
+					<mesh>
+						<scale>1 1 1</scale>
+						<uri>/home/student/Documents/rover/dae/map_last.dae</uri>
+					</mesh>
+				</geometry>
+		  </collision>
+		</link>
+		
+		<link name='ground'>
+			<pose >0 0 0.15 0 -0 0</pose>
+		  <collision name='ground_collision'>
+				<pose >0 0 0 0 -0 0</pose>
+				<geometry>
+					<plane>
+						<normal>0 0 1</normal>
+						<size>100 100</size>
+					</plane>
+				</geometry>
+		  </collision>
+		 	<visual name='ground_visual'>
+		  <pose >0 0 0 0 -0 0</pose>
+			<geometry>
+				<plane>
+					<normal>0 0 1</normal>
+					<size>100 100</size>
+				</plane>
+			</geometry>
+			<material>
+				<ambient>1 1 1 1</ambient>
+				<diffuse>1 1 1 1</diffuse>
+				<specular>0.1 0.1 0.1 1</specular>
+			</material>
+		  </visual>
+		</link>
+		
+	</model>
+	
+</sdf>
