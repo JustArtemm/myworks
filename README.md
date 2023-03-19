@@ -6,9 +6,9 @@ On this repository you can see my current and finished works in Python coding, 3
 ## Finished
 * VK and Telegram bot to help manage MIPT football live translations\
 This bots were able to change score on translations and telegram or VK chats via pressing 1-2 buttons.
-* Rocket Model 2022
-Winner model of 2022 MIPT space festival modeled in SolidWorks
-*Control Theory
-My Control theory tasks on themes: Maximum pontryagin principles, Dynamic programming task, MountainCar using Deep Q-Learning
-*Scripts
-Some scripts that I wrote to help myself in study: mnk - method of minimum squares to draw graphics in my labs
+* Rocket Model 2022\
+Winner model of 2022 MIPT space festival modeled in SolidWorks.
+* Control Theory\
+My Control theory tasks on themes: Maximum pontryagin principles, Dynamic programming task, MountainCar using Deep Q-Learning.
+* Scripts\
+Some scripts that I wrote to help myself in study: mnk - method of minimum squares to draw graphics in my labs.
