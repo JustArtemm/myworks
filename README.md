@@ -10,8 +10,12 @@ This bots were able to change score on translations and telegram or VK chats via
 Winner model of 2022 MIPT space festival modeled in SolidWorks.
 * Control Theory\
 My Control theory tasks on themes: Maximum pontryagin principles, Dynamic programming task, MountainCar using Deep Q-Learning.
+* Antenna\
+Antenna design that I was making while working in MIPT with sudents satelite project. 
+
 * Scripts\
 Some scripts that I wrote to help myself in study: mnk - method of minimum squares to draw graphics in my labs.
+
 ## Currently working
 * Bachelor diploma\
 An algorithm for processing data from binocular video sensors to maintain the position and orientation of an unmanned aircraft in space in the event of a failure of the global navigation satellite system.
