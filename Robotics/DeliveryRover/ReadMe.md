@@ -1,4 +1,4 @@
-This is folder with study project of Delivery Rover in simulation
+This is folder with study project of Delivery Rover in simulation\
 Full report about this work will be added as soon as it will be finished
 
 Short review:
