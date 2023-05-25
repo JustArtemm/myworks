@@ -12,15 +12,15 @@
 Мои задачи по теории управления на темы: Принципы максимума Понтрягина, задача динамического программирования, MountainCar с использованием нейросетей и глубокого Q-обучения.
 * Антенна\
 Дизайн антенны, который я делал во время работы в МФТИ над проектом студенческого спутника типа CubeSat.
-
+* Модель ракеты 2023\
+Модель ракеты для будущего космического фестиваля, та же модель с некоторыми отличиями: большая аэродинамическая устойчивость, датчики высоты и GPS на платформе Raspberry PI, полностью параметрические параметры, рассчитанные в Solidworks Flow simulation для достижения минимального трения и оптимального вычисления положения центра давления и центра масс с помощью python. - не удалось успеть выполнить сбор датччиков в корпус, в следующем году планируется повтор.
 * Скрипты\
 Некоторые скрипты, которые я написал, чтобы помочь себе в учебе: mnk - метод наименьших квадратов для рисования графики в моих лабораторных работах.
 
 ## В настоящее время в работе
 * Диплом бакалавра\
 Алгоритм обработки данных с бинокулярных видеодатчиков для поддержания положения и ориентации беспилотного летательного аппарата в пространстве в случае сбоя глобальной навигационной спутниковой системы.
-* Модель ракеты 2023\
-Модель ракеты для будущего космического фестиваля, та же модель с некоторыми отличиями: большая аэродинамическая устойчивость, датчики высоты и GPS на платформе Raspberry PI, полностью параметрические параметры, рассчитанные в Solidworks Flow simulation для достижения минимального трения и оптимального вычисления положения центра давления и центра масс с помощью python.
+
 * Ровер Доставщик\
 Робот, смоделированный в Solidworks и перенесенный в Gazebo Ign, чтобы смоделировать его и обеспечить ему управление и зрение, позволяющие избегать препятствий, таких как люди и другие возможные помехи в движении, управление в проекте реализуется с помощью пакета ROS 2 Humble, на данный момент робот осуществляет движение при помощи команд а также при помощи клавиатуры, также робот способен строить двумерную карту местности. Актуальную версию робота можно найти в соответствующем разделе вместе с файлом инструкций для запуска тестов.
 
@@ -38,14 +38,14 @@ Winner model of 2022 MIPT space festival modeled in SolidWorks.
 My Control theory tasks on themes: Maximum pontryagin principles, Dynamic programming task, MountainCar using Deep Q-Learning.
 * Antenna\
 Antenna design that I was making while working in MIPT with sudents satelite project. 
-
+* Rocket Model 2023\
+Rocket model for future space festival, same model with some differences: more aerodynamical stability, altitude and GPS sensors on Raspberry PI platform, fully parametrical computed parameters in Solidworks Flow simulation to reach the minimal friction and optimal center of pressure and center of mass position computation with python. - not succeed, couldn't get telemetry, next year we will try again
 * Scripts\
 Some scripts that I wrote to help myself in study: mnk - method of minimum squares to draw graphics in my experimental classes.
 
 ## Currently working
 * Bachelor diploma\
 An algorithm for processing data from binocular video sensors to maintain the position and orientation of an unmanned aircraft in space in the event of a failure of the global navigation satellite system.
-* Rocket Model 2023\
-Rocket model for future space festival, same model with some differences: more aerodynamical stability, altitude and GPS sensors on Raspberry PI platform, fully parametrical computed parameters in Solidworks Flow simulation to reach the minimal friction and optimal center of pressure and center of mass position computation with python.
+
 * Delivery Rover\
 A robot modelled in Solidworks and transfered to Gazebo Ign to simulate it and provide it with control and vision to avoid obstacles such as people etc.
